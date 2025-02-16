@@ -1,0 +1,103 @@
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-light-grey: hsl(217, 12%, 63%);
+    --neutral-clear-dark-blue: hsl(214, 20%, 24%);
+    --neutral-dark-blue: hsl(213, 19%, 18%);
+    --neutral-very-dark-blue: hsl(216, 12%, 8%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--neutral-very-dark-blue);
+    font-family: 'Overpass', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rating-container {
+    width: 80%;
+    min-width: 300px;
+    max-width: 330px;
+    height: 300px;
+    background-color: var(--neutral-dark-blue);
+    border-radius: 10px;
+    padding: 22px;
+}
+
+.rating-content {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+
+    .img-cont{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        border-radius: 20px;
+        width: 30px;
+        height: 30px;
+        background-color: var(--neutral-clear-dark-blue);
+        img {
+            width: 14px;
+        }
+    }
+    
+
+    h2 {
+        font-size: 20px;
+        color: var(--neutral-white);
+        margin-bottom: 14px;
+    }
+
+    p{
+        color: var(--neutral-light-grey);
+        font-size: 13px;
+    }
+    .submit-button{
+        font-weight: 700;
+        background-color: var(--orange);
+        color: var(--neutral-very-dark-blue);
+        border-radius: 20px;
+        border: none;
+        height: 40px;
+        cursor: pointer;
+    }
+}
+.rating-selector{
+   
+   
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 20px 0;
+    .rating-element{
+        color: var(--neutral-white);
+        width: 36px;
+        height: 36px;
+        background-color: var(--neutral-clear-dark-blue);
+        border-radius: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        p{
+            font-size: 13px;
+            font-weight: 600;
+        }
+    }
+    .rating-element:hover{
+        background-color: var(--orange);
+       p{
+        color: var(--neutral-very-dark-blue)
+       }
+    }
+}
